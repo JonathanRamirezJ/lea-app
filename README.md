@@ -16,6 +16,10 @@
 
 + 2.- cd lea-app
 
++ 2.5- Download resources and paste in "app/src"
+
+  [Download resources](https://drive.google.com/open?id=0BwaPZb_q6jMGMUZ0Ylg1STUyUUk)
+
 + 3.- Install angular and bower and libs.
 +
   ```
