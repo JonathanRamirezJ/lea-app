@@ -1,7 +1,7 @@
 {
-  "name": "AutomotiveServicesOnline",
+  "name": "LEA-App",
   "version": "1.0.0",
-  "description": "Website of AutomotiveServicesOnline.",
+  "description": "L-E-A web-App",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
