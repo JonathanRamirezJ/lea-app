@@ -1,0 +1,41 @@
+.icon-logo {
+  z-index: 999999;
+  height: 150px !important;
+  width: 150px !important;
+}
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.main-content {
+  margin-top: 100px;
+}
+.title-dash {
+  text-align: center;
+  color: #006064;
+}
+.brand-logo {
+  margin: 10px;
+}
+.text-logo {
+  position: relative;
+  bottom: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.indicator {
+  background-color: #006064 !important;
+  height: 5px !important;
+}
+.ejercicios a:hover {
+  background: #fbc02d;
+  color: #fff !important;
+}
