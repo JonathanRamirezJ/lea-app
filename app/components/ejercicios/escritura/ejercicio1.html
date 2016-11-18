@@ -1,0 +1,75 @@
+<!--<div class="headerc" ng-include="'components/header.html'"></div>-->
+
+<div class="row page-exercies">
+
+  <div class="col s3 light-blue darken-3 menu-exercies">
+    <a href="#!user" class="text-center user-excercies animated bounce"><img class="circle" src="image/user/user-mujer.png" width="150px"></a>
+    <h4 class="white-text text-center">¡¡Hola Bienvenid@!!</h4>
+    <h6 class="white-text text-center"> Ejcercico del Tema de Escritura</h6>
+    <div class="divider"></div><br>
+    <h5 class="white-text text-center">Menu</h5>
+    <div class="row">
+      <a href="/#ejercicios" class="waves-effect waves-light btn-large btn-opcion amber"><i class="material-icons right">replay</i>Regresar a Ejercicios</a>
+    </div>
+    <div class="row">
+      <a href="#/Terminar" class="waves-effect waves-light btn-large btn-opcion green"><i class="material-icons right">thumb_up</i>Terminar Ejericio</a>
+    </div>
+    <div class="row">
+      <a href="#/dashboard" class="waves-effect waves-light btn-large btn-opcion red"><i class="material-icons right">power_settings_new</i>Salir</a>
+    </div>
+  </div>
+
+  <div class="col s9 animated slideInUp content-exercies">
+    <h2 class="text-center light-blue-text text-accent-4">Ejercicio: {{titleExercies}}</h2>
+    <p><b>Instruciones:</b> {{descriptionExercies}}</p>
+
+    <div class="row blue-grey lighten-5 content-main">
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-home animated" src="../image/Ejercicios/Escritura/Ej01/home.ico" alt="home" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="home" type="text"  class="validate" ng-keyup="keyPressHome()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-tree animated" src="../image/Ejercicios/Escritura/Ej01/tree.png" alt="home" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="tree" type="text"  class="validate" ng-keyup="keyPressTree()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-child animated" src="../image/Ejercicios/Escritura/Ej01/child.png" alt="home" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="child" type="text"  class="validate" ng-keyup="keyPressChild()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-duck animated" src="../image/Ejercicios/Escritura/Ej01/duck.png" alt="home" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="duck" type="text"  class="validate" ng-keyup="keyPressDuck()">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
