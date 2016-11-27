@@ -1,0 +1,26 @@
+[
+  {
+    "id":1,
+    "title":"Ejercicio 1 Facil",
+    "url":"#/ejE1",
+    "tema":"Escritura",
+    "color":"light-blue darken-3",
+    "description":"A completa el siguiente ejercicio con las instruciones de tu instructor."
+  },
+  {
+    "id":2,
+    "title":"Ejercicio 2 Medio",
+    "url":"#/ejE2",
+    "tema":"Escritura",
+    "color":"green darken-2",
+    "description":"A completa el siguiente ejercicio con las instruciones de tu instructor."
+  },
+  {
+    "id":3,
+    "title":"Ejercicio 3 Dificil",
+    "url":"#/ejE3",
+    "tema":"Escritura",
+    "color":"yellow darken-3",
+    "description":"A completa el siguiente ejercicio con las instruciones de tu instructor."
+  }
+]

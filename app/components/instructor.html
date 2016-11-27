@@ -1,8 +1,89 @@
-<div class="headerc" ng-include="'components/header.html'"></div>
-
 <div class="row">
-  <h2 class="title-dash">
-    <img src="../image/icon/profesor.png" alt="" height="100px">
-    Instructor
-  </h2>
+  <div class="col s2 m2 l2 orange darken-2 menu-teacher">
+
+    <div class="row white img-font">
+      <h4 class="title-dash">
+        <img src="../image/user/user-geek.png" alt="" height="100px">
+        Instructor
+      </h4>
+    </div>
+    <div class="divider"></div>
+
+    <h6 class="text-center white-text">Tareas Pendientes</h6>
+
+    <div class="row work-pen">
+      <div ng-controller="TodoListController as todoList">
+        <form ng-submit="todoList.addTodo()">
+          <div class="input-field">
+            <input id="tarea" class="white-text" type="text" ng-model="todoList.todoText"  size="30">
+            <label for="tarea">Nueva Tarea</label>
+          </div>
+          <input class="btn green btn-full" type="submit" value="agregar" >
+        </form>
+        <br>
+        <span>{{todoList.remaining()}} de {{todoList.todos.length}} Hechas</span>
+        [ <a href="" ng-click="todoList.archive()">Eliminar</a> ]
+        <ul class="unstyled">
+          <li ng-repeat="todo in todoList.todos">
+            <label class="checkbox">
+              <input type="checkbox" ng-model="todo.done"/>
+              <label class="done-{{todo.done}}"></label>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" ng-model="todo.done">
+              <span class="done-{{todo.done}} white-text">{{todo.text}}</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="#/dashboard" class="waves-effect waves-light btn-large btn-opcion red"><i class="material-icons right">power_settings_new</i>Salir</a>
+    </div>
+  </div>
+
+  <div class="col s10 l10 m10">
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+        <p class="text-main cyan">bienvenido instructor</p>
+        <div class="card-panel text-center">
+          <span class="cyan-text">
+            Hola Instructor bienvenido a tu sección de ayuda, en esta seccion podrás encontrar tips y
+            recomendaciones las cuales pueden ser de ayuda en cualquier momento de tu enseñanza, además de
+            encontrar nuevos recursos, temarios entre otras cosas de gran utilidad.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 l6 m6 ">
+        <p class="text-main amber">tips</p>
+        <div ng-include="'components/teacher/tips.html'"></div>
+      </div>
+      <div class="col s6 l6 m6 ">
+        <p class="text-main teal">mensajes general</p>
+        <div ng-include="'components/teacher/carousel-general.html'"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s4 l4 m4 ">
+        <p class="text-main teal">recursos</p>
+        <div ng-include="'components/teacher/recursos.html'"></div>
+      </div>
+      <div class="col s4 l4 m4 ">
+        <p class="text-main teal">alumnos</p>
+        <div ng-include="'components/teacher/alumnos.html'"></div>
+      </div>
+      <div class="col s4 l4 m4 ">
+        <p class="text-main teal">Temarios</p>
+        <div ng-include="'components/teacher/temarios.html'"></div>
+      </div>
+    </div>
+
+
+  </div>
+
 </div>

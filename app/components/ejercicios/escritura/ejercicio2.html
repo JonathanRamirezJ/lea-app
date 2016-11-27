@@ -1,0 +1,75 @@
+<!--<div class="headerc" ng-include="'components/header.html'"></div>-->
+
+<div class="row page-exercies">
+
+  <div class="col s3 light-blue darken-3 menu-exercies">
+    <a href="#!user" class="text-center user-excercies animated bounce"><img class="circle" src="image/user/user-mujer.png" width="150px"></a>
+    <h4 class="white-text text-center">¡¡Hola Bienvenid@!!</h4>
+    <h6 class="white-text text-center"> Ejcercico No:  {{idExercies}} del Tema de Escritura</h6>
+    <div class="divider"></div><br>
+    <h5 class="white-text text-center">Menu</h5>
+    <div class="row">
+      <a href="/#ejercicios" class="waves-effect waves-light btn-large btn-opcion amber"><i class="material-icons right">replay</i>Regresar a Ejercicios</a>
+    </div>
+    <div class="row">
+      <a href="#/ejE3" class="waves-effect waves-light btn-large btn-opcion green"><i class="material-icons right">thumb_up</i>Siguiente Ejericio</a>
+    </div>
+    <div class="row">
+      <a href="#/dashboard" class="waves-effect waves-light btn-large btn-opcion red"><i class="material-icons right">power_settings_new</i>Salir</a>
+    </div>
+  </div>
+
+  <div class="col s9 animated slideInUp content-exercies">
+    <h2 class="text-center light-blue-text text-accent-4">Ejercicio: {{titleExercies}}</h2>
+    <p><b>Instruciones:</b> {{descriptionExercies}}</p>
+
+    <div class="row blue-grey lighten-5 content-main">
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-lavadora animated" src="../image/Ejercicios/Escritura/Eje02/lavadora.png" alt="lavadora" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="lavadora" type="text"  class="validate" ng-keyup="keyPressLavadora()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-pista animated" src="../image/Ejercicios/Escritura/Eje02/pista.png" alt="pista" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="pista" type="text"  class="validate" ng-keyup="keyPressPista()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-antena animated" src="../image/Ejercicios/Escritura/Eje02/antena.png" alt="antena" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="antena" type="text"  class="validate" ng-keyup="keyPressAntena()">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s3">
+          <img class="img-barco animated" src="../image/Ejercicios/Escritura/Eje02/barco.png" alt="barco" width="100px">
+        </div>
+        <div class="col s9">
+          <div class="input-field col s12 orange-text">
+            <input id="barco" type="text"  class="validate" ng-keyup="keyPressBarco()">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

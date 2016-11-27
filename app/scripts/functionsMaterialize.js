@@ -1,7 +1,10 @@
 'use strict';
 $(document).ready(function(){
   $('.slider').slider({fullWidth: true});
-  $('.button-collapse').sideNav();
+  $('.button-collapse').sideNav({
+    closeOnClick: true,
+    draggable: true
+  });
   $('ul.tabs').tabs();
   $('ul.tabs').tabs('select_tab', 'tab_id');
   $('.materialboxed').materialbox();

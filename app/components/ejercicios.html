@@ -13,7 +13,7 @@
       <ul class="tabs yellow darken-4">
         <li class="tab col s3"><a class="active white-text" href="#test1">Escritura</a></li>
         <li class="tab col s3"><a class="white-text"href="#test2">Matematicas</a></li>
-        <li class="tab col s3"><a class="white-text"href="#test3">Palabras</a></li>
+        <li class="tab col s3"><a class="white-text"href="#test3">Lectura</a></li>
       </ul>
     </div>
 
@@ -23,8 +23,8 @@
         <div class="col s12 m3 l3 animated bounceInLeft">
           <h4 class="text-center orange-text text-darken-1">Lista de Ejercicio</h4>
           <ul>
-            <li ng-repeat="ejercicio in ejercicios">
-              <a href="#/ejercicios2" ng-click="getDatos(ejercicio.title, ejercicio.description, ejercicio.enlace)">
+            <li ng-repeat="ejercicio in ejerEscritura">
+              <a href="{{ejercicio.url}}" ng-click="getDatos( ejercicio.id, ejercicio.title, ejercicio.description, ejercicio.enlace)">
                 <div class="card-panel {{ejercicio.color}}  text-center">
                   <span class="white-text text-center"><i class="material-icons">view_array</i> {{ejercicio.title}}</span>
                 </div>
@@ -33,36 +33,29 @@
           </ul>
         </div>
         <div class="col s12 m9 l9 animated slideInUp">
-          <h4 class=" cyan-text text-accent-4">Aprender a escribir</h4>
+          <h4 class=" cyan-text text-accent-4">Aprende a escribir</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde accusantium ab minima nihil amet in voluptate Quaerat unde accusantium ab minima nihil amet in voluptate earum corrupti, suscipit, eaque, sequi neque nobis distinctio inventore sed minus repellat quibusdam.</p>
           <div class="slider">
             <ul class="slides" style="height:500px">
               <li>
                 <img src="../image/home01.jpg"> <!-- random image -->
                 <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h3>Es hora de Escribir!</h3>
+                  <h5 class="light grey-text text-lighten-3">Jamas es tarde para Escribir.</h5>
                 </div>
               </li>
               <li>
                 <img src="../image/home02.jpg"> <!-- random image -->
                 <div class="caption left-align">
-                  <h3>Left Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h3>La edad no Importa</h3>
+                  <h5 class="light grey-text text-lighten-3">Nunca es tarde la edad no es limite.</h5>
                 </div>
               </li>
               <li>
                 <img src="../image/home03.jpg"> <!-- random image -->
                 <div class="caption right-align">
-                  <h3>Right Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="../image/home01.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h3>Acercandote a la Tecnologia</h3>
+                  <h5 class="light grey-text text-lighten-3">Da un paso más con la tecnologia en tus manos</h5>
                 </div>
               </li>
             </ul>
@@ -73,28 +66,59 @@
 
     <div id="test2" class="col s12">
       <h3 class="text-center light-blue-text text-darken-4">Matemáticas</h3>
-      <div class="row">
-        <div class="col s12 m4 l2" ng-repeat="ejercicio in ejercicios">
-          <a href="{{ejercicio.url}}">
-            <div class="card-panel {{ejercicio.color}}  text-center">
-              <span class="white-text text-center">{{ejercicio.title}}</span>
-            </div>
-          </a>
+
+      <div class="row" ng-controller="ejMatematicas as mat">
+        <div class="col s4">
+          <h4 class=" cyan-text text-accent-4 text-center">Aprende a Matemáticas fácil y Rápido</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde accusantium ab minima nihil amet in voluptate Quaerat unde accusantium ab minima nihil amet in voluptate earum corrupti, suscipit, eaque, sequi neque nobis distinctio inventore sed minus repellat quibusdam.</p>
+        </div>
+        <div class="col s8">
+          <h4 class=" amber-text text-accent-4">Ejercicios</h4>
+          <div class="col s12 m3 l3" ng-repeat="mate in datosMatematicas">
+            <a href="{{mate.url}}">
+              <div class="card-panel {{mate.color}}  text-center">
+                <span class="white-text text-center">{{mate.title}}</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
+
     </div>
 
     <div id="test3" class="col s12">
-      <h3 class="text-center light-blue-text text-darken-4">Palabras</h3>
-      <div class="row">
-        <div class="col s12 m4 l2" ng-repeat="ejercicio in ejercicios">
-          <a href="{{ejercicio.url}}">
-            <div class="card-panel {{ejercicio.color}}  text-center">
-              <span class="white-text text-center">{{ejercicio.title}}</span>
+      <h3 class="text-center light-blue-text text-darken-4">Lectura</h3>
+      <h4 class=" cyan-text text-accent-4">Aprende a Leer</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde accusantium ab minima nihil amet in voluptate Quaerat unde accusantium ab minima nihil amet in voluptate earum corrupti, suscipit, eaque, sequi neque nobis distinctio inventore sed minus repellat quibusdam.</p>
+
+      <div class="row" ng-controller="ejLecturas as lect">
+        <div class="col s12 m4 l4" ng-repeat="lectura in datosLecturas">
+          <a href="{{lectura.url}}" class="modal-trigger">
+            <div class="card">
+              <div class="card-image">
+                <img ng-src="image/Ejercicios/Lectura/{{lectura.imagen}}">
+                <span class="card-title text-center">{{lectura.title}}</span>
+              </div>
+            </a>
+              <div class="card-content">
+                <p>{{lectura.description}}</p>
+              </div>
             </div>
-          </a>
+            <div id="{{lectura.modal}}" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Lectura: <b> {{lectura.title}} </b></h4>
+                <p class="texto-lectura">{{lectura.text}}</p>
+                <p class="text-center">
+                  <img ng-src="image/Ejercicios/Lectura/{{lectura.imagen}}" alt="imagen" width="300px">
+                </p>
+              </div>
+              <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+              </div>
+            </div>
         </div>
       </div>
+
     </div>
 
   </div>

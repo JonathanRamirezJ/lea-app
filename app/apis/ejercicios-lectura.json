@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "title":"El Honrado Leñador",
+    "url":"#modal1",
+    "modal": "modal1",
+    "tema":"lectura",
+    "description":"Una breve cuento en la cual mejora tu compresión lectora",
+    "imagen": "leniador.png",
+    "text":"Había una vez un pobre leñador que regresaba a su casa después de una jornada de duro trabajo. Al cruzar un puentecillo sobre el río, se le cayo el hacha al agua.Entonces empezó a lamentarse tristemente: ¿Como me ganare el sustento ahora que no tengo hacha? Al instante ¡oh, maravilla! Una bella ninfa aparecía sobre las aguas y dijo al leñador:Espera, buen hombre: traeré tu hacha.Se hundió en la corriente y poco después reaparecía con un hacha de oro entre las manos. El leñador dijo que aquella no era la suya. Por segunda vez se sumergió la ninfa, para reaparecer después con otra hacha de plata.Tampoco es la mía dijo el afligido leñador.Por tercera vez la ninfa busco bajo el agua. Al reaparecer llevaba un hacha de hierro.¡Oh gracias, gracias! ¡Esa es la mía!Pero, por tu honradez, yo te regalo las otras dos. Has preferido la pobreza a la mentira y te mereces un premio."
+  },
+  {
+    "id":2,
+    "title":"El Cedro Vanidoso",
+    "url":"#modal2",
+    "modal": "modal2",
+    "tema":"lectura",
+    "imagen": "zcedro.jpg",
+    "description":"Una breve cuento en la cual mejora tu compresión lectora",
+    "text":"Erase una vez un cedro satisfecho de su hermosura. Plantado en mitad del jardín, superaba en altura a todos los demás árboles. Tan bellamente dispuestas estaban sus ramas, que parecía un gigantesco candelabro. Plantado en mitad del jardín, superaba en altura a todos los demás árboles. Tan bellamente dispuestas estaban sus ramas, que parecía un gigantesco candelabro. Si con lo hermoso que soy diera además fruto, se dijo, ningún árbol del mundo podría compararse conmigo. Y decidió observar a los otros árboles y hacer lo mismo con ellos. Por fin, en lo alto de su erguida copa, apunto un bellísimo fruto. Tendré que alimentarlo bien para que crezca mucho, se dijo. Tanto y tanto creció aquel fruto, que se hizo demasiado grande. La copa del cedro, no pudiendo sostenerlo, se fue doblando; y cuando el fruto maduro, la copa, que era el orgullo y la gloria del árbol, empezó a tambalearse hasta que se troncho pesadamente. ¡A cuantos hombres, como el cedro, su demasiada ambición les arruina!"
+  },
+  {
+    "id":3,
+    "title":"La Bobina Maravillosa",
+    "url":"#modal3",
+    "modal":"modal3",
+    "tema":"lectura",
+    "imagen":"zbobina.png",
+    "description":"Una breve cuento en la cual mejora tu compresión lectora",
+    "text":"Erase un principito que no quería estudiar. Cierta noche, después de haber recibido una buena regañina por su pereza, suspiro tristemente, diciendo: ¡Ay! ¿Cuándo seré mayor para hacer lo que me apetezca? Y he aquí que, a la mañana siguiente, descubrió sobre su cama una bobina de hilo de oro de la que salió una débil voz: Trátame con cuidado, príncipe. Este hilo representa la sucesión de tus días. Conforme vayan pasando, el hilo se ira soltando. No ignoro que deseas crecer pronto... Pues bien, te concedo el don de desenrollar el hilo a tu antojo, pero todo aquello que hayas desenrollado no podrás ovillarlo de nuevo, pues los días pasados no vuelven. El príncipe, para cerciorarse, tiro con ímpetu del hilo y se encontró convertido en un apuesto príncipe. Tiro un poco mas y se vio llevando la corona de su padre. ¡Era rey! Con un nuevo tironcito, inquirió: Dime bobina ¿Cómo serán mi esposa y mis hijos? En el mismo instante, una bellísima joven, y cuatro niños rubios surgieron a su lado. Sin pararse a pensar, su curiosidad se iba apoderando de él y siguió soltando mas hilo para saber como serian sus hijos de mayores. De pronto se miro al espejo y vio la imagen de un anciano decrépito, de escasos cabellos nevados. Se asusto de sí mismo y del poco hilo que quedaba en la bobina. ¡Los instantes de su vida estaban contados! Desesperadamente, intento enrollar el hilo en el carrete, pero sin lograrlo. Entonces la débil vocecilla que ya conocía, hablo así: Has desperdiciado tontamente tu existencia. Ahora ya sabes que los días perdidos no pueden recuperarse. Has sido un perezoso al pretender pasar por la vida sin molestarte en hacer el trabajo de todos los días. Sufre, pues tu castigo.El rey, tras un grito de pánico, cayó muerto: había consumido la existencia sin hacer nada de provecho."
+  }
+]
