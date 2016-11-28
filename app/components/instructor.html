@@ -11,12 +11,12 @@
 
     <h6 class="text-center white-text">Tareas Pendientes</h6>
 
-    <div class="row work-pen">
+    <div class="row work-pen white">
       <div ng-controller="TodoListController as todoList">
         <form ng-submit="todoList.addTodo()">
           <div class="input-field">
-            <input id="tarea" class="white-text" type="text" ng-model="todoList.todoText"  size="30">
-            <label for="tarea">Nueva Tarea</label>
+            <input id="tarea" type="text" ng-model="todoList.todoText"  size="30">
+            <label for="tarea" class="balck-text">Nueva Tarea</label>
           </div>
           <input class="btn green btn-full" type="submit" value="agregar" >
         </form>
@@ -31,7 +31,7 @@
             </label>
             <label class="checkbox">
               <input type="checkbox" ng-model="todo.done">
-              <span class="done-{{todo.done}} white-text">{{todo.text}}</span>
+              <span class="done-{{todo.done}}">{{todo.text}}</span>
             </label>
           </li>
         </ul>

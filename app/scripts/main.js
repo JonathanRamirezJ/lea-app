@@ -44,6 +44,10 @@ app.config(['$routeProvider',function($routeProvider) {
         templateUrl: 'components/ejercicios/matematicas/suma.html',
         controller : 'exercies'
     })
+    .when('/sum', {
+        templateUrl: 'components/ejercicios/matematicas/sumas/sum.html',
+        controller : 'exercies'
+    })
     .when('/restar', {
         templateUrl: 'components/ejercicios/matematicas/resta.html',
         controller : 'exercies'

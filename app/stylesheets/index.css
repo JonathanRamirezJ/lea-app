@@ -48,37 +48,6 @@ video {
 .img-user {
   margin-top: -40px;
 }
-.form-login .input-field label {
-  color: #fff;
-}
-.form-login .input-field input[type=text]:focus + label {
-  color: #fff;
-}
-.form-login .input-field input[type=password]:focus + label {
-  color: #fff; /* label underline focus color */
-}
-.form-login .input-field input[type=text]:focus {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
-}
-.form-login .input-field input[type=password]:focus {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
-/* valid color */
-}
-.form-login .input-field input[type=text].valid {
-  border-bottom: 1px solid #008000;
-  box-shadow: 0 1px 0 0 #008000;
-/* invalid color */
-}
-.form-login .input-field input[type=text].invalid {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
-/* icon prefix focus color */
-}
-.form-login .input-field .prefix.active {
-  color: #fff;
-}
 .img-font {
   border-radius: 20px;
 }
@@ -90,12 +59,12 @@ video {
   padding: 10px;
 }
 .work-pen {
-  border: 2px solid #fff;
   padding: 10px;
+  border-radius: 10px;
 }
 .work-pen .input-field input[type=text]:focus + label,
 .input-field label {
-  color: #fff;
+  color: #008000;
 }
 .menu-teacher {
   height: 1350px;
