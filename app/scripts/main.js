@@ -187,7 +187,7 @@ app.controller('exercies', function ($scope, ejerEscritura, $location , serviceE
     };
     $scope.keyPressTree = function(){
       let word= $('#tree').val();
-      if(word === 'arbol'){
+      if(word === 'árbol'){
         $('#tree').attr('disabled','disabled');
         $('#tree').addClass('input-validate');
         $('#tree').removeClass('input-Invalidate');
@@ -304,7 +304,7 @@ app.controller('exercies', function ($scope, ejerEscritura, $location , serviceE
 
     $scope.keyPressBus = function(){
       let word= $('#bus').val();
-      if(word === 'autobus'){
+      if(word === 'autobús'){
         $('#bus').attr('disabled','disabled');
         $('#bus').addClass('input-validate');
         $('#bus').removeClass('input-Invalidate');
