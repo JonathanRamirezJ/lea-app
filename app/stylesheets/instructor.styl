@@ -4,14 +4,46 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 670px
+  height: 770px
   padding-top: 1px
+  margin-bottom: -20px
 .content-mainIns
  margin-top: 100px
 .btn-full
   width: 100%
 .img-user
   margin-top: -40px
+
+.form-login .input-field label
+  color: #fff
+/* label focus color */
+.form-login .input-field input[type=text]:focus + label
+  color: #fff;
+.form-login .input-field input[type=password]:focus + label
+  color: #fff;
+
+   /* label underline focus color */
+.form-login  .input-field input[type=text]:focus
+  border-bottom: 1px solid #fff
+  box-shadow: 0 1px 0 0 #fff
+
+.form-login  .input-field input[type=password]:focus
+  border-bottom: 1px solid #fff
+  box-shadow: 0 1px 0 0 #fff
+
+   /* valid color */
+.form-login .input-field input[type=text].valid
+  border-bottom: 1px solid green
+  box-shadow: 0 1px 0 0 green
+
+   /* invalid color */
+.form-login .input-field input[type=text].invalid
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff
+
+   /* icon prefix focus color */
+.form-login  .input-field .prefix.active
+  color: #fff
 
 // dashboard instructor
 .img-font
@@ -60,4 +92,3 @@
 // sumas
 .text-instruciones
   text-transform: uppercase
-  

@@ -52,12 +52,24 @@ app.config(['$routeProvider',function($routeProvider) {
         templateUrl: 'components/ejercicios/matematicas/resta.html',
         controller : 'exercies'
     })
+    .when('/rest', {
+        templateUrl: 'components/ejercicios/matematicas/restas/rest.html',
+        controller : 'exercies'
+    })
     .when('/multiplicacion', {
         templateUrl: 'components/ejercicios/matematicas/multiplicacion.html',
         controller : 'exercies'
     })
+    .when('/multi', {
+        templateUrl: 'components/ejercicios/matematicas//multiplicacion/multi.html',
+        controller : 'exercies'
+    })
     .when('/division', {
         templateUrl: 'components/ejercicios/matematicas/division.html',
+        controller : 'exercies'
+    })
+    .when('/div', {
+        templateUrl: 'components/ejercicios/matematicas/division/div.html',
         controller : 'exercies'
     })
     .when('/about', {
