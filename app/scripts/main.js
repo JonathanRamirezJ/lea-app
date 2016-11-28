@@ -60,7 +60,7 @@ app.config(['$routeProvider',function($routeProvider) {
         templateUrl : 'components/about.html'
     })
     .when('/prueba', {
-        templateUrl : 'components/carousel-general.html'
+        templateUrl : 'components/teacher/carousel-general.html'
     })
     .otherwise({
         redirectTo : '/'
